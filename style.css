@@ -101,8 +101,8 @@ table {
     background-color: #809df4;
 }
 .list-container {
-    list-style-image: url(./images/icon-check.svg);
-    display: flex;
+    /* list-style-image: url(./images/icon-check.svg); */
+    /* display: flex; */
     flex-direction: column;
     align-items: left;
     padding-inline: 10%;
@@ -112,8 +112,11 @@ li {
     padding-block-end: 2%;
 }
 span {
-    margin-left: 5%;
+    position:absolute;
+    left: 250px;
 }
 .checked {
     text-decoration: line-through;
+    text-decoration-color: white;
+    list-style-image: url(./images/icon-check.svg);
 }
