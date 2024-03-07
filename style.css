@@ -27,7 +27,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    background-image: url(./images/bg-desktop-dark.jpg);
+    /* background-image: url(./images/bg-desktop-dark.jpg); */
     background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
@@ -52,8 +52,12 @@ table {
 /* MAIN STYLES */
 
 .main-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #b466f0;
-    width: 50%;
+    min-width: 375px;
+    max-width: 30%;
     height: auto;
     position: relative;
     margin: 0 auto;
@@ -61,25 +65,22 @@ table {
     font-family: "Madimi One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    border-radius: 10px;
 }
 .app-title {
-    font-size: 1.5rem;
-    padding-block: 5%;
-    text-align: left;
-    margin-left: 5%;
-    color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color:white;
 }
 .form-container{
     display: flex;
-    justify-content: left;
+    justify-content: space-evenly;
+    width: 75%;
     gap: 10px;
-    margin-left: 5%;
-    padding-bottom: 5%;
 }
 .text-input{
+    width: 80%;
     border-radius: 10px;
-    padding-block: 5px;
     border: none;
     font-family: "Madimi One", sans-serif;
     font-weight: 400;
@@ -101,22 +102,29 @@ table {
     background-color: #809df4;
 }
 .list-container {
-    /* list-style-image: url(./images/icon-check.svg); */
-    /* display: flex; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 69%;
+    display: flex;
     flex-direction: column;
-    align-items: left;
-    padding-inline: 10%;
+    justify-content: left;
+    gap:15px
 }
 li {
-    padding-block-start: 2%;
-    padding-block-end: 2%;
+    color: white;
+    font-size: 1.5rem;
 }
 span {
     position:absolute;
-    left: 250px;
+    left: 80%;
 }
 .checked {
     text-decoration: line-through;
-    text-decoration-color: white;
+    text-decoration-color: black;
     list-style-image: url(./images/icon-check.svg);
+}
+main {
+    background-image: url(./images/bg-desktop-dark.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
